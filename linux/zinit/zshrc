@@ -113,8 +113,8 @@ zinit ice from="gh-r" as="program" bpick="*linux64.tar.gz" ver="nightly" pick="n
 zinit light neovim/neovim
 # WEZTERM
 # zinit ice from="gh-r" as="program" bpick="*ebian11.deb" ver="nightly" pick="usr/bin/wezterm"
-zinit ice from="gh-r" as="program" bpick="*appimage*" mv="Wez* -> wezterm" pick="wezterm"
-zinit light wez/wezterm
+# zinit ice from="gh-r" as="program" bpick="*appimage*" mv="Wez* -> wezterm" pick="wezterm"
+# zinit light wez/wezterm
 # FORGIT
 zinit ice wait lucid
 zinit load wfxr/forgit
@@ -193,7 +193,7 @@ setopt nolisttypes
 setopt listpacked
 setopt automenu
 unsetopt BEEP
-setopt vi
+setopt emacs
 
 chpwd() {
   set -- "$(git rev-parse --show-toplevel 2> /dev/null)"
@@ -297,27 +297,27 @@ export PATH=$PATH:/usr/local/go/bin:~/.local/bin:~/bin
 #########################################################################
 # GOOGLE-SDK
 #########################################################################
-if [ -f '/opt/google-cloud-sdk/path.zsh.inc' ]; then . '/opt/google-cloud-sdk/path.zsh.inc'; fi
+# if [ -f '/opt/google-cloud-sdk/path.zsh.inc' ]; then . '/opt/google-cloud-sdk/path.zsh.inc'; fi
 
 #########################################################################
 # GO SETTINGS
 #########################################################################
-export GOPATH=$HOME/Dev/go
+# export GOPATH=$HOME/Dev/go
 
 #########################################################################
 # FLUTTER SETTINGS
 #########################################################################
-export PATH="$PATH:$HOME/Dev/flutter/bin"
+# export PATH="$PATH:$HOME/Dev/flutter/bin"
 
 #########################################################################
 # ANDROID STUDIO SETTINGS
 #########################################################################
-export PATH="$PATH:/opt/android-studio/bin"
+# export PATH="$PATH:/opt/android-studio/bin"
 #
 #########################################################################
 # MSSQL-TOOLS
 #########################################################################
-export PATH="$PATH:/opt/mssql-tools18/bin"
+# export PATH="$PATH:/opt/mssql-tools18/bin"
 
 #########################################################################
 # P10K SETTINGS
